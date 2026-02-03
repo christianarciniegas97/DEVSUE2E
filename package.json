@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types": "modules",
   "scripts": {
-     "cy:open": "cypress open",
-      "cy:run": "cypress run"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,10 @@
     "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.9.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
     "esbuild": "^0.27.2"
+  },
+  "dependencies": {
+    "cypress-on-fix": "^1.1.0"
   }
 }
