@@ -1,0 +1,29 @@
+{
+  "name": "devsue2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "modules",
+  "scripts": {
+     "cy:open": "cypress open",
+      "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianarciniegas97/DEVSUE2E.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/christianarciniegas97/DEVSUE2E/issues"
+  },
+  "homepage": "https://github.com/christianarciniegas97/DEVSUE2E#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.9.0",
+    "esbuild": "^0.27.2"
+  }
+}
