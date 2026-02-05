@@ -1,6 +1,6 @@
 import { interceptCartRequests, interceptHomeRequests } from "../helpers/network";
 import CartPage from "../pages/cartPage";
-import checkoutPage from "../pages/checkoutPage";
+import CheckoutPage from "../pages/checkoutPage";
 import Homepage from "../pages/homepage";
 import ProductDetailPage from "../pages/productDetailPage";
 import ThankYouPage from "../pages/thankYouPage";
@@ -28,7 +28,7 @@ describe('Purchase flow', () => {
     
     /* complete the form payment */
     CartPage.clickOnGoToPlaceOrder()
-    checkoutPage.completeFormPlaceOrderMain()
+    CheckoutPage.completeFormPlaceOrderMain()
 
     /* Validate purchases*/
     ThankYouPage.validatePurchases()
