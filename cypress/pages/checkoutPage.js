@@ -13,7 +13,7 @@ const checkoutElements = {
 
 }
 
-export default class checkoutPage {
+export default class CheckoutPage {
 
     static completeFormPlaceOrderMain(){
         this.validateFormPlaceOrder()
