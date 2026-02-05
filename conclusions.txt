@@ -1,0 +1,35 @@
+Conclusions:
+
+- The automation framework was designed using the Page Object Model (POM) pattern
+  to improve test readability, maintainability, and scalability.
+
+- A complete end-to-end test flow was implemented to reflect the real user journey,
+  avoiding unnecessary test fragmentation for this challenge.
+
+- Test data was externalized using fixtures to support data-driven testing and to
+  keep test logic clearly separated from test data.
+
+- Network requests were intercepted and synchronized using Cypress intercepts to
+  ensure test stability without relying on arbitrary waits.
+
+- Mochawesome was selected as the reporting tool to provide clear and shareable
+  HTML execution reports as evidence of test execution.
+
+- The solution focuses on clarity, reliability, and simplicity, prioritizing
+  realistic test scenarios and sustainable automation practices.
+
+- Due to issues detected in the application related to cookies and local storage
+  persistence, a helper was implemented to clear browser storage and prevent
+  test instability.
+
+- For the add-to-cart process, conditional validations were implemented to handle
+  potential API failures. In case of a 400 response from the backend, a mapped
+  error ("Add to cart error") is triggered, causing the E2E flow to fail
+  explicitly.
+
+- During checkout initialization, the user name input field did not consistently
+  accept typed values due to UI behavior. To avoid unnecessary waits and flaky
+  tests, input interaction was handled by forcing the write action on this field.
+
+- At the end of the E2E flow, a screenshot of the successful purchase is captured
+  as additional execution evidence.
