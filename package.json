@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
+    "cy:open": "cypress open --e2e --browser=chrome",
     "cy:run": "cypress run"
   },
   "repository": {
@@ -20,11 +20,8 @@
   },
   "homepage": "https://github.com/christianarciniegas97/DEVSUE2E#readme",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.9.0",
-    "cypress-mochawesome-reporter": "^4.0.2",
-    "esbuild": "^0.27.2"
+    "cypress-mochawesome-reporter": "^4.0.2"
   },
   "dependencies": {
     "cypress-on-fix": "^1.1.0"
